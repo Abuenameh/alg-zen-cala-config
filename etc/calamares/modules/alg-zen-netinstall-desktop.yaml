@@ -1,5 +1,5 @@
 - name: "Desktop: KDE Plasma"
-  description: "Installs Fresh KDE Plasma Desktop"
+  description: "KDE's Plasma Desktop is a highly configurable, modern desktop environment."
   critical: false
   hidden: false
   selected: false
@@ -9,8 +9,8 @@
     - kate
     - dolphin
     - spectacle
-- name: "Desktop: Xfce4"
-  description: "Xfce4"
+- name: "Desktop: XFCE"
+  description: "XFCE is a configurable desktop environment which consumes less hardware resources."
   critical: false
   hidden: false
   selected: false
@@ -22,8 +22,8 @@
     - mousepad
     - thunar
     - xfce4-terminal
-- name: "Desktop: Gnome"
-  description: "Installs gnome desktop"
+- name: "Desktop: GNOME"
+  description: "GNOME is an attractive and intuitive desktop with modern features. Starts with Wayland by default."
   critical: false
   hidden: false
   selected: false
@@ -32,7 +32,7 @@
     - gnome-terminal
     - nautilus
 - name: "Desktop: Cinnamon"
-  description: "Installs cinnamon desktop"
+  description: "Cinnamon strives to provide a traditional Windows-like user interface & experience."
   critical: false
   hidden: false
   selected: false
@@ -41,7 +41,7 @@
     - gnome-screenshot
     - gnome-terminal
 - name: "Desktop: Mate"
-  description: "Installs mate desktop"
+  description: "Mate provides an intuitive and attractive desktop to Linux users using traditional metaphors. MATE started as a fork of GNOME 2."
   critical: false
   hidden: false
   selected: false
@@ -49,15 +49,22 @@
     - mate
     - mate-extra
     - mate-tweak
+- name: "Desktop: LXQt"
+  description: "LXQt is a fast and energy-saving desktop environment."
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - lxqt
 - name: "Desktop: Cutefish"
-  description: "Installs cutefish desktop"
+  description: "Cutefish is a new and modern desktop environment with MAC OS like user interface."
   critical: false
   hidden: false
   selected: false
   packages:
     - cutefish
 - name: "Desktop: Budgie"
-  description: "Installs budgie desktop"
+  description: "Budgie is a desktop environment designed with the modern user in mind, it focuses on simplicity and elegance."
   critical: false
   hidden: false
   selected: false
@@ -66,18 +73,56 @@
     - budgie-extras
     - gnome-terminal
 - name: "Desktop: Deepin"
-  description: "Installs deepin desktop"
+  description: "Deepin desktop interface and apps feature an intuitive and elegant design."
   critical: false
   hidden: false
   selected: false
   packages:
     - deepin
     - deepin-extra
-- name: "Desktop: Lxqt"
-  description: "Installs lxqt desktop"
+- name: "Window Managers"
+  description: "Stock Window Managers with no themeing, customization of any sort. You can just install them, it's up to you how you want to configure them."
   critical: false
   hidden: false
   selected: false
-  packages:
-    - lxqt
-
+  expanded: false
+  immutable: true
+  subgroups:
+      - name: "Common Packages used in Window Managers"
+        description: "Bars, Terminals, Program Launchers, etc"
+        selected: false
+        subgroups:
+            - name: "Terminal Emulators"
+              description: "Terminals"
+              selected: false
+              packages:
+                 - kitty
+                 - alacritty
+                 - rxvt-unicode
+                 - terminator
+                 - xterm
+            - name: "Miscellaneous"
+              description: "Misc Tools"
+              selected: false
+              packages:
+                 - polybar
+                 - dunst
+                 - rofi
+                 - dmenu
+                 - betterlockscreen
+                 - feh
+                 - picom
+      - name: "i3WM: i3 Window Manager"
+        description: "Tiling window manager, completely written from scratch."
+        selected: false
+        packages:
+           - i3-gaps
+           - i3blocks
+           - i3lock
+           - i3status
+      - name: "BSPWM: Bitmap Space Partitioning Window Manager"
+        description: "bspwm is a tiling window manager that represents windows as the leaves of a full binary tree. It has support for EWMH and multiple monitors, and is configured and controlled through messages."
+        selected: false
+        packages:
+           - bspwm
+           - sxhkd

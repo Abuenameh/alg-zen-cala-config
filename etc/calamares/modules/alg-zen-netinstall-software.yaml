@@ -1,0 +1,150 @@
+- name: "Web Browsers"
+  description: "Surf the Internet"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - firefox
+    - chromium
+    - google-chrome
+    - opera
+    - vivaldi
+    - microsoft-edge-dev-bin
+    - midori
+    - qutebrowser
+    - otter-browser
+- name: "Communication"
+  description: "Communicate with friends, family, teams"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - telegram-desktop
+    - discord
+    - teams
+    - zoom
+- name: "Multimedia Applications"
+  description: "Audio, Video, Graphics Software"
+  critical: false
+  hidden: false
+  selected: false
+  immutable: false
+  expanded: false
+  subgroups:
+      - name: "Audio Volume Control"
+        description: "Essential Audio & Volume Control"
+        selected: false
+        packages:
+           - alsa-utils
+           - pulseaudio
+           - pulseaudio-alsa
+           - pavucontrol
+      - name: "Video Software"
+        description: "Video Players & Editors"
+        selected: false
+        subgroups:
+            - name: "Video Players"
+              description: "Play your videos"
+              selected: false
+              packages:
+                 - vlc
+                 - mplayer
+                 - mpv
+                 - parole
+            - name: "Video Editors"
+              description: "Misc Tools"
+              selected: false
+              packages:
+                 - kdenlive
+                 - shotcut
+                 - davinci-resolve
+      - name: "Screen Recorders"
+        description: "Record Your Screen (ScreenCast)"
+        selected: false
+        packages:
+           - simplescreenrecorder
+           - obs-studio
+      - name: "Digital Audio Workstation"
+        description: "Audio Processing & Editing Software"
+        selected: false
+        packages:
+           - audacity
+           - ardour
+           - lmms
+           - rosegarden
+           - muse
+      - name: "Computer Graphics"
+        description: "Graphics Processing Software"
+        selected: false
+        packages:
+           - blender
+- name: "Fonts"
+  description: "Support for Asian Fonts, Proprietary Non-Linux Fonts, Gylphs & Emojis."
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - noto-fonts
+    - noto-fonts-cjk
+    - noto-fonts-emoji
+    - ttf-roboto
+    - ttf-ms-fonts
+    - ttf-dejavu
+    - gnu-free-fonts
+    - ttf-ubuntu-font-family
+- name: "Development Tools"
+  description: "Text-Editors, IDEs, Version Control"
+  critical: false
+  hidden: false
+  selected: false
+  immutable: false
+  expanded: false
+  subgroups:
+      - name: "Text Editors"
+        description: "Edit Source Files"
+        selected: false
+        packages:
+           - vim
+           - emacs
+           - code
+           - kate
+           - atom
+           - notepadqq
+      - name: "Integrated Development Enviroment"
+        description: "Software & Hardware Development Suites"
+        selected: false
+        packages:
+           - anjuta
+           - codeblocks
+           - kdevelop
+           - netbeans
+           - qtcreator
+           - bluefish
+           - spyder
+           - scratch
+           - arduino
+           - android-studio
+           - intellij-idea-community-edition
+      - name: "Build Automation"
+        description: "Automate Build Process"
+        selected: false
+        packages:
+           - cmake
+           - ant
+           - maven
+           - gradle
+      - name: "GUI Builders"
+        description: "Build Graphical User Interfaces"
+        selected: false
+        packages:
+           - glade
+           - qt5-tools
+           - kde-dev-utils
+           - fltk
+      - name: "Version Control"
+        description: "Software Development Version Control"
+        selected: false
+        packages:
+           - git
+           - mercurial
+           - subversion
