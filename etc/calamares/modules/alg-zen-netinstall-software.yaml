@@ -52,7 +52,7 @@
   critical: false
   hidden: false
   selected: false
-  immutable: false
+  immutable: true
   expanded: false
   subgroups:
       - name: "Audio Volume Control"
@@ -107,7 +107,7 @@
   critical: false
   hidden: false
   selected: false
-  immutable: false
+  immutable: true
   expanded: false
   subgroups:
       - name: "Launchers"
@@ -146,7 +146,7 @@
   critical: false
   hidden: false
   selected: false
-  immutable: false
+  immutable: true
   expanded: false
   subgroups:
       - name: "Text Editors"
