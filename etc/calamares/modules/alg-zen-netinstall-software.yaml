@@ -23,6 +23,30 @@
     - discord
     - teams
     - zoom
+- name: "Office Suites"
+  description: "Office Applications"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - libreoffice-still
+    - calligra
+    - freeoffice
+    - wps-office
+- name: "Fonts"
+  description: "Support for Asian Fonts, Proprietary Non-Linux Fonts, Gylphs & Emojis."
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - noto-fonts
+    - noto-fonts-cjk
+    - noto-fonts-emoji
+    - ttf-roboto
+    - ttf-ms-fonts
+    - ttf-dejavu
+    - gnu-free-fonts
+    - ttf-ubuntu-font-family
 - name: "Multimedia Applications"
   description: "Audio, Video, Graphics Software"
   critical: false
@@ -78,20 +102,45 @@
         selected: false
         packages:
            - blender
-- name: "Fonts"
-  description: "Support for Asian Fonts, Proprietary Non-Linux Fonts, Gylphs & Emojis."
+- name: "Gameing"
+  description: "Games & Launchers"
   critical: false
   hidden: false
   selected: false
-  packages:
-    - noto-fonts
-    - noto-fonts-cjk
-    - noto-fonts-emoji
-    - ttf-roboto
-    - ttf-ms-fonts
-    - ttf-dejavu
-    - gnu-free-fonts
-    - ttf-ubuntu-font-family
+  immutable: false
+  expanded: false
+  subgroups:
+      - name: "Launchers"
+        description: "Valve's proton allows you to play Windows games."
+        selected: false
+        packages:
+           - steam
+           - playonlinux
+      - name: "Action and Adventure"
+        description: "Action &/or Adventure Games"
+        selected: false
+        packages:
+           - astromenace
+           - barrage
+           - bass
+           - blobwars
+           - kollision
+           - kspaceduel
+           - minecraft-launcher
+      - name: "Arcade"
+        description: "Fast paced, skill oriented games."
+        selected: false
+        packages:
+           - bomber
+           - chromium-bsu
+           - hedgewars
+           - mari0
+      - name: "Casual"
+        description: "Casual Games"
+        selected: false
+        packages:
+           - aisleriot
+           - gnuchess
 - name: "Development Tools"
   description: "Text-Editors, IDEs, Version Control"
   critical: false
