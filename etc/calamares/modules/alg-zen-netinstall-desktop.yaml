@@ -22,6 +22,7 @@
     - mousepad
     - thunar
     - xfce4-terminal
+    - network-manager-applet
 - name: "Desktop: GNOME"
   description: "GNOME is an attractive and intuitive desktop with modern features."
   critical: false
@@ -51,6 +52,7 @@
     - mate
     - mate-extra
     - mate-tweak
+    - network-manager-applet
 - name: "Desktop: LXQt"
   description: "LXQt is a fast and energy-saving desktop environment."
   critical: false
@@ -59,6 +61,7 @@
   packages:
     - lxqt
     - slock
+    - network-manager-applet
 - name: "Desktop: Cutefish"
   description: "Cutefish is a new and modern desktop environment with MAC OS like user interface."
   critical: false
