@@ -1,13 +1,3 @@
-- name: "Desktop: Cinnamon"
-  description: "Cinnamon strives to provide a traditional Windows-like user interface & experience."
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - cinnamon
-    - gedit
-    - nemo
-    - gnome-terminal
 - name: "Desktop: KDE Plasma"
   description: "KDE's Plasma Desktop is a highly configurable, modern desktop environment."
   critical: false
@@ -18,7 +8,7 @@
     - konsole
     - kate
     - dolphin
-    - spectacle
+    - gwenview
 - name: "Desktop: XFCE"
   description: "XFCE is a configurable desktop environment which consumes less hardware resources."
   critical: false
@@ -42,6 +32,16 @@
     - gnome-terminal
     - nautilus
     - gedit
+- name: "Desktop: Cinnamon"
+  description: "Cinnamon strives to provide a traditional Windows-like user interface & experience."
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - cinnamon
+    - gedit
+    - nemo
+    - gnome-terminal
 - name: "Desktop: Mate"
   description: "Mate provides an intuitive and attractive desktop to Linux users using traditional metaphors."
   critical: false
