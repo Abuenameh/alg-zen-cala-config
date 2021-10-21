@@ -102,7 +102,7 @@
         selected: false
         packages:
            - blender
-- name: "Gameing"
+- name: "Gaming"
   description: "Games & Launchers"
   critical: false
   hidden: false
