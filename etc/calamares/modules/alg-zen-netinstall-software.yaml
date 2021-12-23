@@ -1,3 +1,20 @@
+- name: "Utilities"
+  description: "Basic System Utilities"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - base-devel
+    - neoefetch
+    - screenfetch
+    - duf
+    - htop
+    - bashtop
+    - btop
+    - gtop
+    - vtop
+    - gotop
+    - inxi
 - name: "Web Browsers"
   description: "Surf the Internet"
   critical: false
@@ -9,6 +26,7 @@
     - google-chrome
     - opera
     - vivaldi
+    - brave-bin
     - microsoft-edge-dev-bin
     - midori
     - qutebrowser
