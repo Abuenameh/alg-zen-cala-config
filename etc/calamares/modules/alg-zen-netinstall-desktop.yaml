@@ -1,3 +1,17 @@
+- name: "Desktop: XFCE - installed by default"
+  description: "XFCE is a configurable desktop environment which consumes less hardware resources."
+  critical: false
+  hidden: false
+  selected: false
+  immutable: true
+  expanded: false
+  packages:
+    - xfce4
+    - xfce4-goodies
+    - mousepad
+    - thunar
+    - xfce4-terminal
+    - network-manager-applet
 - name: "Desktop: KDE Plasma"
   description: "KDE's Plasma Desktop is a highly configurable, modern desktop environment."
   critical: false
@@ -9,20 +23,6 @@
     - kate
     - dolphin
     - gwenview
-- name: "Desktop: XFCE"
-  description: "XFCE is a configurable desktop environment which consumes less hardware resources."
-  critical: false
-  hidden: false
-  selected: false
-  immutable: false
-  expanded: false
-  packages:
-    - xfce4
-    - xfce4-goodies
-    - mousepad
-    - thunar
-    - xfce4-terminal
-    - network-manager-applet
 - name: "Desktop: GNOME"
   description: "GNOME is an attractive and intuitive desktop with modern features."
   critical: false
