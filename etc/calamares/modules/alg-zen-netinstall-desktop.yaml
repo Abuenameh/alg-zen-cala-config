@@ -53,7 +53,7 @@
     - mate-extra
     - mate-tweak
     - network-manager-applet
-- name: "Desktop: LXQt"
+- name: "Desktop: LXQt/OpenBox"
   description: "LXQt is a fast and energy-saving desktop environment."
   critical: false
   hidden: false
