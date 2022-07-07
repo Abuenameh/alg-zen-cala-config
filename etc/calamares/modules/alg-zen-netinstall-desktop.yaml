@@ -1,10 +1,21 @@
-- name: "Desktop: XFCE - installed by default"
-  description: "XFCE is a configurable desktop environment which consumes less hardware resources."
+- name: "Desktop: KDE Plasma - installed by default"
+  description: "Plasma Desktop + some utility software is pre-installed"
   critical: false
   hidden: false
   selected: false
   immutable: true
   expanded: false
+  packages:
+    - plasma
+    - konsole
+    - kate
+    - dolphin
+    - gwenview
+- name: "Desktop: XFCE"
+  description: "Installs Vanilla XFCE + some utility software"
+  critical: false
+  hidden: false
+  selected: false
   packages:
     - xfce4
     - xfce4-goodies
@@ -12,19 +23,8 @@
     - thunar
     - xfce4-terminal
     - network-manager-applet
-- name: "Desktop: KDE Plasma"
-  description: "KDE's Plasma Desktop is a highly configurable, modern desktop environment."
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - plasma
-    - konsole
-    - kate
-    - dolphin
-    - gwenview
 - name: "Desktop: GNOME"
-  description: "GNOME is an attractive and intuitive desktop with modern features."
+  description: "Installs Vanilla GNOME + some utility software"
   critical: false
   hidden: false
   selected: false
@@ -34,7 +34,7 @@
     - nautilus
     - gedit
 - name: "Desktop: Cinnamon"
-  description: "Cinnamon strives to provide a traditional Windows-like user interface & experience."
+  description: "Installs Vanilla Cinnamon + some utility software"
   critical: false
   hidden: false
   selected: false
@@ -44,7 +44,7 @@
     - nemo
     - gnome-terminal
 - name: "Desktop: Mate"
-  description: "Mate provides an intuitive and attractive desktop to Linux users using traditional metaphors."
+  description: "Installs Vanilla Mate + mate extra software"
   critical: false
   hidden: false
   selected: false
@@ -54,7 +54,7 @@
     - mate-tweak
     - network-manager-applet
 - name: "Desktop: LXQt/OpenBox"
-  description: "LXQt is a fast and energy-saving desktop environment."
+  description: "Install LXQT + network-manager"
   critical: false
   hidden: false
   selected: false
